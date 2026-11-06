@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marie Dippon</title>
+<meta name="description" content="Marie Dippon is an iOS developer and founder in the Bay Area. Apps built with SwiftUI, Firebase, and AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&amp;family=Instrument+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="atmosphere" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar" id="top">
+  <div class="topbar-inner wrap">
+    <a class="logo" href="#top" aria-label="Back to top"><span data-bind="initials">MD</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#school">School</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme"></button>
+      <button class="pill-btn" id="open-playground-top" type="button">Playground</button>
+    </div>
+  </div>
+</header>
+
+<main id="main"></main>
+<footer class="footer" id="footer"></footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="Back to top"></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<div class="overlay" id="writeup" hidden>
+  <div class="overlay-bg" data-close></div>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="writeup-title">
+    <button class="icon-btn close-btn" type="button" data-close aria-label="Close write-up"></button>
+    <div id="writeup-body"></div>
+  </div>
+</div>
+
+<div class="overlay pg" id="playground" hidden role="dialog" aria-modal="true" aria-label="Playground"></div>
+
+<noscript>
+  <p style="padding:24px;font-family:sans-serif">Marie Dippon, iOS developer and founder in the Bay Area. This site needs JavaScript. Email: marierose.dippon@gmail.com</p>
+</noscript>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
